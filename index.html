@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BR MOTO GEAR | Ride. Survive. Dominate.</title>
+    <meta name="description"
+        content="BR Moto Gear – Race-proven helmets, riding gear and accessories engineered to protect you when it matters most.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════════════════════════
+     FIXED NAVBAR
+══════════════════════════════════════════════════ -->
+    <nav class="navbar" id="navbar">
+        <a href="#home" class="nav-logo">
+            <img src="hi.png" alt="BR Moto Gear" class="nav-logo-img">
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link" data-section="home">HOME</a></li>
+            <li><a href="#helmets" class="nav-link" data-section="helmets">HELMETS</a></li>
+            <li><a href="#riding-gear" class="nav-link" data-section="riding-gear">RIDING GEAR</a></li>
+            <li><a href="#accessories" class="nav-link" data-section="accessories">ACCESSORIES</a></li>
+            <li><a href="#technology" class="nav-link" data-section="technology">TECHNOLOGY</a></li>
+            <li><a href="#our-story" class="nav-link" data-section="our-story">OUR STORY</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">CONTACT</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button class="nav-icon" aria-label="Search">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <circle cx="11" cy="11" r="7" />
+                    <line x1="21" y1="21" x2="15.65" y2="15.65" />
+                </svg>
+            </button>
+            <button class="nav-icon" aria-label="Account">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                    <circle cx="12" cy="7" r="4" />
+                </svg>
+            </button>
+            <button class="nav-icon cart-icon" aria-label="Cart">
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <path d="M16 10a4 4 0 01-8 0" />
+                </svg>
+                <span class="cart-dot"></span>
+            </button>
+            <!-- Hamburger (mobile only) -->
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <div class="mobile-menu-header">
+            <img src="hi.png" alt="BR Moto Gear" class="nav-logo-img">
+            <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <line x1="18" y1="6" x2="6" y2="18" />
+                    <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link">HOME</a></li>
+            <li><a href="#helmets" class="mobile-nav-link">HELMETS</a></li>
+            <li><a href="#riding-gear" class="mobile-nav-link">RIDING GEAR</a></li>
+            <li><a href="#accessories" class="mobile-nav-link">ACCESSORIES</a></li>
+            <li><a href="#technology" class="mobile-nav-link">TECHNOLOGY</a></li>
+            <li><a href="#our-story" class="mobile-nav-link">OUR STORY</a></li>
+            <li><a href="#contact" class="mobile-nav-link">CONTACT</a></li>
+        </ul>
+        <div class="mobile-social">
+            <a href="#" class="s-icon" aria-label="Instagram"><svg width="22" height="22" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="2" y="2" width="20" height="20" rx="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg></a>
+            <a href="#" class="s-icon" aria-label="YouTube"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.8">
+                    <path
+                        d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                    <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                </svg></a>
+            <a href="#" class="s-icon" aria-label="Facebook"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1.8">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg></a>
+        </div>
+    </div>
+
+
+    <!-- ══════════════════════════════════════════════════
+     LEFT SOCIAL RAIL (fixed)
+══════════════════════════════════════════════════ -->
+    <aside class="social-rail">
+        <div class="rail-line-top"></div>
+        <div class="rail-ticks"><span></span><span></span><span></span><span></span></div>
+        <span class="rail-follow">FOLLOW US</span>
+        <a href="#" class="s-icon" aria-label="Instagram">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+        </a>
+        <a href="#" class="s-icon" aria-label="YouTube">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+            </svg>
+        </a>
+        <a href="#" class="s-icon" aria-label="Facebook">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+        </a>
+    </aside>
+
+    <!-- ══════════════════════════════════════════════════
+     PAGE 1 — HERO / HOME
+══════════════════════════════════════════════════ -->
+    <section class="page-section" id="home">
+        <div class="hero-bg">
+            <img src="images/ben1.png" alt="BR Moto Gear Rider" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="eyebrow"><span class="hz"></span>BUILT FOR IMPACT<span class="hz"></span></div>
+                <h1 class="hero-headline">
+                    <span class="hl-w">RIDE.</span>
+                    <span class="hl-w">SURVIVE.</span>
+                    <span class="hl-r">DOMINATE.</span>
+                </h1>
+                <p class="hero-sub">ENGINEERED TO PROTECT YOU WHEN IT MATTERS MOST.</p>
+                <p class="hero-body">
+                    BR-MOTOGEAR helmets are built with race-proven technology,<br>
+                    extreme impact protection and unmatched craftsmanship.<br>
+                    This is not just gear. It's your edge.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#helmets" class="cta-primary">EXPLORE HELMETS <span>→</span></a>
+                    <a href="#" class="cta-ghost">
+                        <span class="play-btn"><svg width="12" height="12" viewBox="0 0 24 24" fill="#fff">
+                                <polygon points="5 3 19 12 5 21 5 3" />
+                            </svg></span>
+                        WATCH CRASH TEST
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Feature Rail -->
+        <aside class="feat-rail">
+            <div class="feat-row">
+                <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                        stroke-width="1.8">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg></div>
+                <div>
+                    <div class="feat-t">ECE 22.06</div>
+                    <div class="feat-s">CERTIFIED</div>
+                </div>
+            </div>
+            <div class="feat-row">
+                <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                        stroke-width="1.8">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                    </svg></div>
+                <div>
+                    <div class="feat-t">50+</div>
+                    <div class="feat-s">IMPACT TESTS<br>PASSED</div>
+                </div>
+            </div>
+            <div class="feat-row">
+                <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                        stroke-width="1.8">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                        <polyline points="2 17 12 22 22 17" />
+                        <polyline points="2 12 12 17 22 12" />
+                    </svg></div>
+                <div>
+                    <div class="feat-t">CARBON FIBER</div>
+                    <div class="feat-s">SHELL</div>
+                </div>
+            </div>
+            <div class="feat-row">
+                <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                        stroke-width="1.8">
+                        <path
+                            d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" />
+                    </svg></div>
+                <div>
+                    <div class="feat-t">MAX AIRFLOW</div>
+                    <div class="feat-s">VENTILATION</div>
+                </div>
+            </div>
+            <div class="feat-row">
+                <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                        stroke-width="1.8">
+                        <rect x="3" y="11" width="18" height="11" rx="2" />
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                    </svg></div>
+                <div>
+                    <div class="feat-t">DOUBLE D RING</div>
+                    <div class="feat-s">SECURITY</div>
+                </div>
+            </div>
+            <div class="feat-row">
+                <div class="feat-ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                        stroke-width="1.8">
+                        <polygon points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
+                        <polygon points="14.5 6.5 21 13 18 16 11.5 9.5" />
+                    </svg></div>
+                <div>
+                    <div class="feat-t">RACE</div>
+                    <div class="feat-s">APPROVED</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Bottom Feature Strip -->
+        <div class="bottom-strip">
+            <div class="strip-item">
+                <div class="strip-thumb"
+                    style="background-image:url('images/helmet_fullface.png');background-position:center;background-size:cover;">
+                </div>
+                <div class="strip-info">
+                    <div class="strip-label">CRASH TESTED</div>
+                    <p>Tested beyond industry standards for real world protection.</p>
+                </div>
+            </div>
+            <div class="strip-item">
+                <div class="strip-thumb"
+                    style="background-image:url('images/helmet_modular.png');background-position:center;background-size:cover;">
+                </div>
+                <div class="strip-info">
+                    <div class="strip-label">PREMIUM BUILD</div>
+                    <p>Ultra light carbon fiber shell for maximum strength &amp; performance.</p>
+                </div>
+            </div>
+            <div class="strip-item">
+                <div class="strip-thumb"
+                    style="background-image:url('images/helmet_adventure.png');background-position:center;background-size:cover;">
+                </div>
+                <div class="strip-info">
+                    <div class="strip-label">EXTREME AIRFLOW</div>
+                    <p>Advanced ventilation system keeps you cool under extreme conditions.</p>
+                </div>
+            </div>
+            <div class="strip-item">
+                <div class="strip-thumb"
+                    style="background-image:url('images/helmet_offroad.png');background-position:center;background-size:cover;">
+                </div>
+                <div class="strip-info">
+                    <div class="strip-label">SECURE FITMENT</div>
+                    <p>Double D ring retention system for a secure and precise fit.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Teaser -->
+        <div class="ghost-bar">
+            <div class="ghost-text" aria-hidden="true">NO COMPROMISE</div>
+            <div class="scroll-cta">
+                <span class="scroll-lbl">SCROLL TO EXPLORE</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+     PAGE 2 — HELMETS
+══════════════════════════════════════════════════ -->
+    <section class="page-section bg-dark" id="helmets">
+        <div class="helmets-bg">
+            <img src="images/ben1.png" alt="" class="helmets-bg-img">
+            <div class="helmets-overlay"></div>
+        </div>
+
+        <div class="section-content">
+            <!-- Header -->
+            <div class="section-header">
+                <div class="sec-left">
+                    <div class="eyebrow red-text"><span class="hz"></span>CHOOSE YOUR WEAPON<span class="hz"></span>
+                    </div>
+                    <h2 class="section-title">HELMETS</h2>
+                    <p class="section-sub">BUILT DIFFERENT. BUILT FOR YOU.</p>
+                </div>
+                <div class="sec-right">
+                    <p class="sec-desc">From city streets to race tracks. From long rides to wild terrains. Find the
+                        helmet that matches your ride and your lifestyle.</p>
+                    <div class="red-divider"></div>
+                </div>
+            </div>
+
+            <!-- Helmet Grid -->
+            <div class="helmet-grid">
+                <div class="helmet-card" id="hc-fullface">
+                    <div class="hc-num">01</div>
+                    <div class="hc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="1.5">
+                            <path d="M12 2a9 9 0 0 1 9 9c0 4-2 7-5 8.5V21H8v-1.5C5 18 3 15 3 11a9 9 0 0 1 9-9z" />
+                        </svg></div>
+                    <div class="hc-title">FULL FACE</div>
+                    <p class="hc-desc">Maximum protection.<br>Zero compromises.</p>
+                    <div class="hc-img-wrap"><img src="images/helmet_fullface.png" alt="Full Face Helmet"
+                            class="hc-img"></div>
+                    <a href="#" class="hc-btn">EXPLORE <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></a>
+                </div>
+                <div class="helmet-card" id="hc-modular">
+                    <div class="hc-num">02</div>
+                    <div class="hc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="1.5">
+                            <path d="M12 2a9 9 0 0 1 9 9c0 4-2 7-5 8.5V21H8v-1.5C5 18 3 15 3 11a9 9 0 0 1 9-9z" />
+                            <line x1="3" y1="11" x2="21" y2="11" />
+                        </svg></div>
+                    <div class="hc-title">MODULAR</div>
+                    <p class="hc-desc">Flip up.<br>Freedom meets safety.</p>
+                    <div class="hc-img-wrap"><img src="images/helmet_modular.png" alt="Modular Helmet" class="hc-img">
+                    </div>
+                    <a href="#" class="hc-btn">EXPLORE <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></a>
+                </div>
+                <div class="helmet-card" id="hc-adventure">
+                    <div class="hc-num">03</div>
+                    <div class="hc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="1.5">
+                            <path d="M12 2a9 9 0 0 1 9 9c0 4-2 7-5 8.5V21H8v-1.5C5 18 3 15 3 11a9 9 0 0 1 9-9z" />
+                            <path d="M7 2.5 Q12 0 17 2.5" />
+                        </svg></div>
+                    <div class="hc-title">ADVENTURE</div>
+                    <p class="hc-desc">Built for the wild.<br>Conquer every terrain.</p>
+                    <div class="hc-img-wrap"><img src="images/helmet_adventure.png" alt="Adventure Helmet"
+                            class="hc-img"></div>
+                    <a href="#" class="hc-btn">EXPLORE <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></a>
+                </div>
+                <div class="helmet-card" id="hc-offroad">
+                    <div class="hc-num">04</div>
+                    <div class="hc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="1.5">
+                            <path d="M12 2a9 9 0 0 1 9 9c0 4-2 7-5 8.5V21H8v-1.5C5 18 3 15 3 11a9 9 0 0 1 9-9z" />
+                            <line x1="8" y1="4" x2="6" y2="7" />
+                            <line x1="16" y1="4" x2="18" y2="7" />
+                        </svg></div>
+                    <div class="hc-title">OFF ROAD</div>
+                    <p class="hc-desc">No roads.<br>No limits.</p>
+                    <div class="hc-img-wrap"><img src="images/helmet_offroad.png" alt="Off Road Helmet" class="hc-img">
+                    </div>
+                    <a href="#" class="hc-btn">EXPLORE <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></a>
+                </div>
+                <div class="helmet-card" id="hc-openface">
+                    <div class="hc-num">05</div>
+                    <div class="hc-icon"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="1.5">
+                            <path d="M12 2a9 9 0 0 0-9 9c0 4 2 7 5 8.5V21h8v-1.5c3-1.5 5-4.5 5-8.5a9 9 0 0 0-9-9z" />
+                            <path d="M8 14 Q12 17 16 14" />
+                        </svg></div>
+                    <div class="hc-title">OPEN FACE</div>
+                    <p class="hc-desc">Classic style.<br>Urban freedom.</p>
+                    <div class="hc-img-wrap"><img src="images/helmet_fullface.png" alt="Open Face Helmet" class="hc-img"
+                            style="filter:hue-rotate(0deg) saturate(0.7) brightness(0.85);"></div>
+                    <a href="#" class="hc-btn">EXPLORE <svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></a>
+                </div>
+            </div>
+
+            <!-- Bottom Cert Strip -->
+            <div class="cert-strip">
+                <div class="cert-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8262c" stroke-width="1.8">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg>
+                    <div>
+                        <div class="cert-t">ECE 22.06</div>
+                        <div class="cert-s">CERTIFIED</div>
+                    </div>
+                </div>
+                <div class="cert-div"></div>
+                <div class="cert-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8262c" stroke-width="1.8">
+                        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                    </svg>
+                    <div>
+                        <div class="cert-t">50+</div>
+                        <div class="cert-s">IMPACT TESTS PASSED</div>
+                    </div>
+                </div>
+                <div class="cert-div"></div>
+                <div class="cert-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8262c" stroke-width="1.8">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                        <polyline points="2 17 12 22 22 17" />
+                        <polyline points="2 12 12 17 22 12" />
+                    </svg>
+                    <div>
+                        <div class="cert-t">CARBON FIBER</div>
+                        <div class="cert-s">PREMIUM SHELL</div>
+                    </div>
+                </div>
+                <div class="cert-div"></div>
+                <div class="cert-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8262c" stroke-width="1.8">
+                        <path
+                            d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" />
+                    </svg>
+                    <div>
+                        <div class="cert-t">MAX AIRFLOW</div>
+                        <div class="cert-s">VENTILATION</div>
+                    </div>
+                </div>
+                <div class="cert-div"></div>
+                <div class="cert-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8262c" stroke-width="1.8">
+                        <rect x="3" y="11" width="18" height="11" rx="2" />
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                    </svg>
+                    <div>
+                        <div class="cert-t">DOUBLE D RING</div>
+                        <div class="cert-s">SECURITY</div>
+                    </div>
+                </div>
+                <div class="cert-div"></div>
+                <div class="cert-item">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8262c" stroke-width="1.8">
+                        <polygon points="14.5 17.5 3 6 3 3 6 3 17.5 14.5" />
+                        <polygon points="14.5 6.5 21 13 18 16 11.5 9.5" />
+                    </svg>
+                    <div>
+                        <div class="cert-t">RACE</div>
+                        <div class="cert-s">APPROVED</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+     PAGE 3 — RIDING GEAR
+══════════════════════════════════════════════════ -->
+    <section class="page-section bg-dark" id="riding-gear">
+        <div class="gear-bg">
+            <img src="images/ben1.png" alt="" class="helmets-bg-img">
+            <div class="gear-overlay"></div>
+        </div>
+
+        <div class="section-content">
+            <!-- Hero header -->
+            <div class="gear-hero-top">
+                <div class="gear-text-block">
+                    <div class="eyebrow red-text"><span class="hz"></span>GEAR UP. RIDE WITHOUT LIMITS.<span
+                            class="hz"></span></div>
+                    <h2 class="gear-title">RIDING<br><span class="hl-r">GEAR</span></h2>
+                    <p class="gear-body">Premium riding gear engineered for maximum protection,<br>comfort and
+                        performance. Built for every ride. Built for every rider.</p>
+
+                    <div class="gear-badges">
+                        <div class="gear-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#e8262c" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg><span>MAXIMUM<br>PROTECTION</span></div>
+                        <div class="gear-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#e8262c" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg><span>ALL DAY<br>COMFORT</span></div>
+                        <div class="gear-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#e8262c" stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                                <polyline points="2 17 12 22 22 17" />
+                            </svg><span>PREMIUM<br>MATERIALS</span></div>
+                        <div class="gear-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#e8262c" stroke-width="2">
+                                <path d="M9.59 4.59A2 2 0 1 1 11 8H2" />
+                                <path d="M9.59 19.41A2 2 0 1 0 11 16H2" />
+                            </svg><span>ALL SEASON<br>GEAR</span></div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Explore Grid -->
+            <div class="gear-grid-header">
+                <div class="grid-hd-left"><span class="red-mark">|</span><span class="hz-sm"></span> EXPLORE OUR RIDING
+                    GEAR <span class="hz-sm"></span></div>
+                <a href="#" class="view-all">VIEW ALL GEAR <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="#e8262c" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                    </svg></a>
+            </div>
+
+            <div class="gear-grid">
+                <div class="gear-card">
+                    <div class="gc-title">RIDING JACKETS <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke="#e8262c" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></div>
+                    <p class="gc-desc">Protection. Performance.<br>Every ride.</p>
+                    <div class="gc-img"
+                        style="background-image:url('images/helmet_fullface.png');background-size:cover;background-position:center;filter:hue-rotate(0deg);">
+                    </div>
+                </div>
+                <div class="gear-card">
+                    <div class="gc-title">RIDING PANTS <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke="#e8262c" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></div>
+                    <p class="gc-desc">Built tough.<br>Ride strong.</p>
+                    <div class="gc-img"
+                        style="background-image:url('images/helmet_modular.png');background-size:cover;background-position:center;">
+                    </div>
+                </div>
+                <div class="gear-card">
+                    <div class="gc-title">RIDING GLOVES <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke="#e8262c" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></div>
+                    <p class="gc-desc">Grip. Control.<br>No compromises.</p>
+                    <div class="gc-img"
+                        style="background-image:url('images/helmet_adventure.png');background-size:cover;background-position:center;">
+                    </div>
+                </div>
+                <div class="gear-card">
+                    <div class="gc-title">RIDING BOOTS <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke="#e8262c" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></div>
+                    <p class="gc-desc">Stability. Safety.<br>Ride ahead.</p>
+                    <div class="gc-img"
+                        style="background-image:url('images/helmet_offroad.png');background-size:cover;background-position:center;">
+                    </div>
+                </div>
+                <div class="gear-card">
+                    <div class="gc-title">ARMOR &amp; PROTECTION <svg width="13" height="13" viewBox="0 0 24 24"
+                            fill="none" stroke="#e8262c" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></div>
+                    <p class="gc-desc">Advanced protection<br>where it matters.</p>
+                    <div class="gc-img"
+                        style="background-image:url('images/helmet_fullface.png');background-size:cover;background-position:30% center;filter:brightness(0.7) saturate(0.6);">
+                    </div>
+                </div>
+                <div class="gear-card">
+                    <div class="gc-title">RAIN GEAR <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke="#e8262c" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></div>
+                    <p class="gc-desc">Stay dry.<br>Stay focused.</p>
+                    <div class="gc-img"
+                        style="background-image:url('images/helmet_modular.png');background-size:cover;background-position:center;filter:brightness(0.65) saturate(0.5) hue-rotate(200deg);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+     PAGE 4 — ACCESSORIES
+══════════════════════════════════════════════════ -->
+    <section class="page-section bg-dark" id="accessories">
+        <div class="acc-bg">
+            <img src="images/ben1.png" alt="" class="acc-bg-img">
+            <div class="acc-overlay"></div>
+        </div>
+
+        <div class="section-content">
+            <!-- Hero header -->
+            <div class="acc-hero-top">
+                <div class="acc-text-block">
+                    <div class="eyebrow red-text"><span class="hz"></span>DETAILS MATTER. PERFORMANCE COUNTS.<span
+                            class="hz"></span></div>
+                    <h2 class="acc-title">GEAR THAT<br><span class="hl-r">ELEVATES.</span></h2>
+                    <p class="acc-body">Premium accessories designed to upgrade your ride,<br>enhance your safety and
+                        express your style.</p>
+                    <div class="gear-badges">
+                        <div class="gear-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#e8262c" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg><span>PREMIUM<br>QUALITY</span></div>
+                        <div class="gear-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#e8262c" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                <polyline points="22 4 12 14.01 9 11.01" />
+                            </svg><span>PERFECT<br>FITMENT</span></div>
+                        <div class="gear-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#e8262c" stroke-width="2">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                            </svg><span>BUILT TO<br>LAST</span></div>
+                        <div class="gear-badge"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                stroke="#e8262c" stroke-width="2">
+                                <rect x="1" y="3" width="15" height="13" />
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                                <circle cx="5.5" cy="18.5" r="2.5" />
+                                <circle cx="18.5" cy="18.5" r="2.5" />
+                            </svg><span>FAST &amp; SAFE<br>DELIVERY</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Accessories Grid Header -->
+            <div class="gear-grid-header">
+                <div class="grid-hd-left"><span class="red-mark">|</span><span class="hz-sm"></span> EXPLORE ACCESSORIES
+                    <span class="hz-sm"></span>
+                </div>
+                <a href="#" class="view-all">VIEW ALL ACCESSORIES <svg width="14" height="14" viewBox="0 0 24 24"
+                        fill="none" stroke="#e8262c" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                        <polyline points="12 5 19 12 12 19" />
+                    </svg></a>
+            </div>
+
+            <div class="gear-grid">
+                <div class="gear-card">
+                    <div class="gc-title">HELMET VISORS <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke="#e8262c" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></div>
+                    <p class="gc-desc">Clear vision.<br>All conditions.</p>
+                    <div class="gc-img"
+                        style="background-image:url('images/helmet_fullface.png');background-size:180%;background-position:40% 20%;">
+                    </div>
+                    <div class="gc-count">12+ PRODUCTS</div>
+                </div>
+                <div class="gear-card">
+                    <div class="gc-title">BLUETOOTH INTERCOMS <svg width="13" height="13" viewBox="0 0 24 24"
+                            fill="none" stroke="#e8262c" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></div>
+                    <p class="gc-desc">Stay connected.<br>Ride together.</p>
+                    <div class="gc-img"
+                        style="background-image:url('images/helmet_modular.png');background-size:180%;background-position:60% 30%;">
+                    </div>
+                    <div class="gc-count">8+ PRODUCTS</div>
+                </div>
+                <div class="gear-card">
+                    <div class="gc-title">TANK BAGS <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke="#e8262c" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></div>
+                    <p class="gc-desc">Carry more.<br>Ride free.</p>
+                    <div class="gc-img"
+                        style="background-image:url('images/helmet_adventure.png');background-size:180%;background-position:50% 40%;">
+                    </div>
+                    <div class="gc-count">15+ PRODUCTS</div>
+                </div>
+                <div class="gear-card">
+                    <div class="gc-title">PHONE MOUNTS <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke="#e8262c" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></div>
+                    <p class="gc-desc">Secure mount.<br>Zero distractions.</p>
+                    <div class="gc-img"
+                        style="background-image:url('images/helmet_offroad.png');background-size:180%;background-position:50% 30%;">
+                    </div>
+                    <div class="gc-count">10+ PRODUCTS</div>
+                </div>
+                <div class="gear-card">
+                    <div class="gc-title">ACTION CAMERAS <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke="#e8262c" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></div>
+                    <p class="gc-desc">Record every ride.<br>Relive everything.</p>
+                    <div class="gc-img"
+                        style="background-image:url('images/helmet_fullface.png');background-size:160%;background-position:70% 50%;filter:saturate(0.7) brightness(0.8);">
+                    </div>
+                    <div class="gc-count">9+ PRODUCTS</div>
+                </div>
+                <div class="gear-card">
+                    <div class="gc-title">GLOVES <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                            stroke="#e8262c" stroke-width="2.5">
+                            <line x1="5" y1="12" x2="19" y2="12" />
+                            <polyline points="12 5 19 12 12 19" />
+                        </svg></div>
+                    <p class="gc-desc">Grip. Comfort.<br>Protection.</p>
+                    <div class="gc-img"
+                        style="background-image:url('images/helmet_modular.png');background-size:160%;background-position:40% 60%;filter:saturate(0.8);">
+                    </div>
+                    <div class="gc-count">20+ PRODUCTS</div>
+                </div>
+            </div>
+
+            <!-- Bottom Trust Bar -->
+            <div class="trust-bar">
+                <div class="tb-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                        stroke-width="1.8">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                    </svg><span>100% GENUINE<br>PRODUCTS</span></div>
+                <div class="tb-div"></div>
+                <div class="tb-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                        stroke-width="1.8">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg><span>LIFETIME<br>SUPPORT</span></div>
+                <div class="tb-div"></div>
+                <div class="tb-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                        stroke-width="1.8">
+                        <rect x="1" y="3" width="15" height="13" />
+                        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
+                        <circle cx="5.5" cy="18.5" r="2.5" />
+                        <circle cx="18.5" cy="18.5" r="2.5" />
+                    </svg><span>FAST &amp; FREE<br>SHIPPING</span></div>
+                <div class="tb-div"></div>
+                <div class="tb-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                        stroke-width="1.8">
+                        <polyline points="1 4 1 10 7 10" />
+                        <path d="M3.51 15a9 9 0 1 0 .49-3.67" />
+                    </svg><span>EASY<br>RETURNS</span></div>
+                <div class="tb-div"></div>
+                <div class="tb-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                        stroke-width="1.8">
+                        <rect x="1" y="4" width="22" height="16" rx="2" />
+                        <line x1="1" y1="10" x2="23" y2="10" />
+                    </svg><span>SECURE<br>PAYMENT</span></div>
+                <div class="tb-div"></div>
+                <div class="tb-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                        stroke-width="1.8">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg><span>TRUSTED BY<br>RIDERS</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+     PAGE 5 — TECHNOLOGY
+══════════════════════════════════════════════════ -->
+    <section class="page-section bg-dark" id="technology">
+        <div class="hero-bg"><img src="images/ben1.png" alt="" class="hero-bg-img" style="object-position:center 30%;">
+            <div class="hero-overlay"
+                style="background:linear-gradient(to right,rgba(5,5,5,0.97) 0%,rgba(5,5,5,0.88) 40%,rgba(5,5,5,0.6) 100%),linear-gradient(to bottom,rgba(5,5,5,0.7) 0%,transparent 20%,transparent 80%,rgba(5,5,5,1) 100%);">
+            </div>
+        </div>
+        <div class="section-content tech-content">
+            <div class="eyebrow red-text" style="margin-bottom:16px;"><span class="hz"></span>THE SCIENCE BEHIND THE
+                SAFETY<span class="hz"></span></div>
+            <h2 class="section-title" style="font-size:clamp(52px,6vw,80px);margin-bottom:50px;">TECHNOLOGY</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tc-ico"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="1.5">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                            <polyline points="2 17 12 22 22 17" />
+                            <polyline points="2 12 12 17 22 12" />
+                        </svg></div>
+                    <h3>CARBON FIBER SHELL</h3>
+                    <p>Ultra-light 3K carbon composite construction delivers superior impact absorption at a fraction of
+                        conventional weight.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tc-ico"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg></div>
+                    <h3>MULTI-IMPACT EPS</h3>
+                    <p>Dual-density expanded polystyrene liner absorbs and distributes energy across multiple impact
+                        zones.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tc-ico"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="1.5">
+                            <path
+                                d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2" />
+                        </svg></div>
+                    <h3>AERO CHANNEL VENTING</h3>
+                    <p>12-channel aerodynamic ventilation system channels airflow through the helmet for maximum cooling
+                        at any speed.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tc-ico"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                                d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32" />
+                        </svg></div>
+                    <h3>ANTI-FOG VISOR</h3>
+                    <p>Pinlock-ready anti-fog visor with UV400 protection and scratch-resistant coating for
+                        crystal-clear vision in all conditions.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tc-ico"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg></div>
+                    <h3>DOUBLE D-RING</h3>
+                    <p>Race-proven titanium double D-ring retention system ensures the helmet stays securely in place at
+                        all speeds.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="tc-ico"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="1.5">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg></div>
+                    <h3>IMPACT SENSOR READY</h3>
+                    <p>Optional integration with smart impact sensors that auto-alert emergency contacts upon crash
+                        detection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+     PAGE 6 — OUR STORY
+══════════════════════════════════════════════════ -->
+    <section class="page-section bg-dark" id="our-story">
+        <div class="hero-bg"><img src="images/ben1.png" alt="" class="hero-bg-img" style="object-position:70% center;">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="section-content story-content">
+            <div class="story-left">
+                <div class="eyebrow red-text"><span class="hz"></span>WHO WE ARE<span class="hz"></span></div>
+                <h2 class="section-title" style="font-size:clamp(48px,5.5vw,72px);">OUR<br>STORY</h2>
+                <div class="story-line"></div>
+                <p class="story-text">BR Moto Gear was born on the racetrack. Founded by riders, for riders, we set out
+                    to create gear that never compromises — not on protection, not on performance, not on style.</p>
+                <p class="story-text">Every helmet we build is tested beyond ECE 22.06 standards. Every piece of riding
+                    gear is stress-tested by professional riders before it ever reaches you.</p>
+                <p class="story-text">This isn't just gear. It's a commitment. To every rider who trusts us with their
+                    safety when it matters most.</p>
+                <div class="story-stats">
+                    <div class="ss-item">
+                        <div class="ss-num">10+</div>
+                        <div class="ss-lbl">YEARS RACING</div>
+                    </div>
+                    <div class="ss-div"></div>
+                    <div class="ss-item">
+                        <div class="ss-num">50K+</div>
+                        <div class="ss-lbl">RIDERS PROTECTED</div>
+                    </div>
+                    <div class="ss-div"></div>
+                    <div class="ss-item">
+                        <div class="ss-num">30+</div>
+                        <div class="ss-lbl">COUNTRIES</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+     PAGE 7 — CONTACT
+══════════════════════════════════════════════════ -->
+    <section class="page-section bg-dark" id="contact">
+        <div class="hero-bg"><img src="images/ben1.png" alt="" class="hero-bg-img" style="object-position:center 40%;">
+            <div class="hero-overlay"
+                style="background:linear-gradient(to right,rgba(5,5,5,0.98) 0%,rgba(5,5,5,0.92) 60%,rgba(5,5,5,0.7) 100%),linear-gradient(to bottom,rgba(5,5,5,0.7) 0%,transparent 20%,transparent 80%,rgba(5,5,5,1) 100%);">
+            </div>
+        </div>
+        <div class="section-content contact-content">
+            <div class="contact-left">
+                <div class="eyebrow red-text"><span class="hz"></span>GET IN TOUCH<span class="hz"></span></div>
+                <h2 class="section-title" style="font-size:clamp(48px,5.5vw,72px);margin-bottom:20px;">CONTACT</h2>
+                <p class="gear-body" style="margin-bottom:40px;">Have questions? Our team of riders is ready to help.
+                    Reach out for product advice, orders, or partnership inquiries.</p>
+                <div class="contact-info">
+                    <div class="ci-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg><span>info@brmotogear.com</span></div>
+                    <div class="ci-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.59 2 2 0 0 1 3.59 1.36h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z" />
+                        </svg><span>+91 BR-MOTO</span></div>
+                    <div class="ci-row"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e8262c"
+                            stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg><span>Hyderabad</span></div>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form class="contact-form" onsubmit="return false;">
+                    <div class="form-row">
+                        <div class="form-field"><label>FULL NAME</label><input type="text" placeholder="Your Name"
+                                id="contact-name"></div>
+                        <div class="form-field"><label>EMAIL</label><input type="email"
+                                placeholder="brmotor@example.com" id="contact-email"></div>
+                    </div>
+                    <div class="form-field"><label>SUBJECT</label><input type="text" placeholder="Product inquiry..."
+                            id="contact-subject"></div>
+                    <div class="form-field"><label>MESSAGE</label><textarea rows="5"
+                            placeholder="Tell us how we can help..." id="contact-message"></textarea></div>
+                    <button type="submit" class="cta-primary" style="width:100%;justify-content:center;"
+                        id="contact-submit">SEND MESSAGE <span>→</span></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+     GLOBAL FOOTER
+══════════════════════════════════════════════════ -->
+    <footer class="site-footer">
+        <div class="footer-ghost">NO COMPROMISE</div>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="hi.png" alt="BR Moto Gear" class="footer-logo-img">
+            </div>
+            <p class="footer-tagline">RIDE. SURVIVE. DOMINATE.</p>
+            <div class="footer-social">
+                <a href="#" class="s-icon" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="1.8">
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg></a>
+                <a href="#" class="s-icon" aria-label="YouTube"><svg width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.54C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                        <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                    </svg></a>
+                <a href="#" class="s-icon" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="1.8">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg></a>
+            </div>
+            <p class="footer-copy">© 2026 BR MOTO GEAR. ALL RIGHTS RESERVED.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Active nav highlight on scroll
+        const sections = document.querySelectorAll('.page-section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.dataset.section === id) link.classList.add('active');
+                    });
+                }
+            });
+        }, { threshold: 0.4 });
+
+        sections.forEach(s => observer.observe(s));
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', e => {
+                const target = document.querySelector(anchor.getAttribute('href'));
+                if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Hamburger / Mobile Menu
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileClose = document.getElementById('mobileClose');
+
+        function openMenu() {
+            mobileMenu.classList.add('open');
+            hamburger.classList.add('active');
+            hamburger.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeMenu() {
+            mobileMenu.classList.remove('open');
+            hamburger.classList.remove('active');
+            hamburger.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = '';
+        }
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.contains('open') ? closeMenu() : openMenu();
+        });
+        mobileClose.addEventListener('click', closeMenu);
+
+        // Close on mobile link click
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                closeMenu();
+                const target = document.querySelector(link.getAttribute('href'));
+                if (target) { setTimeout(() => target.scrollIntoView({ behavior: 'smooth' }), 300); }
+            });
+        });
+    </script>
+</body>
+
+</html>
